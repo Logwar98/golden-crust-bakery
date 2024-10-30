@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page - Golden Crust</title>
+    <link rel="stylesheet" type="text/css" href="Css\style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <h1>Golden Crust Bakery</h1>
+        <!-- Supposed to be a logo here but couldn't think of one or find one.-->
+        <!-- dropdown nav-->
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Feedback
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#">Feedback</a>
+                    <a href="credits.html">Credits</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <menu>
+        <div class="panel">
+            <section id="Feedback2">
+                <h1>Feedback Form</h1>
+            </section>
+            <form id="myForm">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="fname" placeholder="Your name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="Your Email..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="reason">Reasons for Feedback</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="reason" name="reason">
+                            <option value="">Select an option</option>
+                            <option value="food">Food</option>
+                            <option value="store">Store</option>
+                            <option value="staff">Staff</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write Something Here.."></textarea>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <button type="button" class="submit_row" onclick="openPopup()">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="overlay" id="overlay2"></div>
+        <div class="popup" id="popup">
+            <p id="popupText"></p>
+            <div class="buttons">
+                <button class="yes-button" onclick="confirmSubmit(true)">Yes</button>
+                <button class="no-button" onclick="confirmSubmit(false)">No</button>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="row2">
+                <div class="column" style="background-color:#aaa;">
+                    <section id="Feedback">
+                        <h2>Yelp.com ⭐⭐⭐⭐</h2>
+                        <p>I recently visited Golden Crust Bakery and had a delightful experience! The cozy atmosphere,
+                            complete with charming decor and soft background music, made it a perfect spot for a
+                            relaxing
+                            afternoon. The pastries were fresh and delicious, especially the almond croissant, which was
+                            flaky
+                            and buttery. The coffee was rich and aromatic, complementing the baked goods perfectly. The
+                            only
+                            downside was the slightly slow service during peak hours, but the friendly staff made up for
+                            it with
+                            their warm hospitality. Overall, Sweet Haven is a fantastic place to unwind and enjoy some
+                            tasty
+                            treats</p>
+                    </section>
+                </div>
+                <div class="column" style="background-color:#bbb;">
+                    <section id="Feedback">
+                        <h2>Review.com ⭐⭐⭐</h2>
+                        <p>I had a mixed experience. The bakery has a pleasant
+                            atmosphere, and the aroma of freshly baked goods is inviting. I tried their chocolate
+                            croissant,
+                            which was decent but lacked the rich, buttery flavor I was hoping for. The coffee was
+                            average,
+                            and
+                            the service, while friendly, was quite slow even during off-peak hours. The seating area was
+                            also a
+                            bit cramped, making it hard to relax. Overall, Golden Crust Bakery has potential, but there
+                            are
+                            areas that could use improvement</p>
+                    </section>
+                </div>
+                <div class="column" style="background-color:#ccc;">
+                    <section id="Feedback">
+                        <h2>Placeholder.com ⭐⭐⭐⭐</h2>
+                        <p>I recently had the pleasure of visiting Golden Crust Bakery, and it was a delightful
+                            experience!
+                            The
+                            bakery boasts a warm and inviting ambiance, with the aroma of freshly baked bread and
+                            pastries
+                            filling the air. Their signature sourdough bread was a standout, with a perfect crust and
+                            soft,
+                            flavorful interior. The selection of cakes and pastries was impressive, and the lemon tart I
+                            tried
+                            was both tangy and sweet, just right. While the seating area was a bit limited, the friendly
+                            staff
+                            and the quality of the baked goods more than made up for it. Overall, Golden Crust Bakery is
+                            a
+                            gem
+                            worth visiting.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </menu>
+    <footer>
+        <h1>Bakery</h1>
+
+        <div class="social">
+            <h2>Social</h2>
+
+            <div class="facebook_icon">
+                <a href="https://www.facebook.com/"><img src="Images\facebook.jpg" alt="Facebook" width="50px"></a>
+            </div>
+
+            <div class="twitter_icon">
+                <a href="https://x.com/home"><img src="Images\twitter.jpg" alt="Twitter" width="50px"></a>
+            </div>
+
+            <div class="instagram_icon">
+                <a href="https://www.instagram.com/"><img src="Images\instagram.jpg" alt="Instagram" width="50px"></a>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+
+<script src="Java\Java.js"></script>
+
+</html>
