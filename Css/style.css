@@ -161,7 +161,7 @@ main {
 
 #Top .panel {
     padding: 0;
-    background-image: url("../Images/stockphoto-880710798-612x612.jpg");
+    background-image: url("../Images/title-page-image.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -717,7 +717,7 @@ label {
     }
 
     #Top .panel {
-        background-image: url("../Images/stockphoto-880710798-612x612.jpg");
+        background-image: url("../Images/title-page-image.jpg");
     }
 
 }
