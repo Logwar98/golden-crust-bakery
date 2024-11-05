@@ -36,7 +36,7 @@ function openPopup() { //Form Variables
     }
 }
 
-function confirmSubmit(isConfirmed) { /Popup Gone
+function confirmSubmit(isConfirmed) { //Popup Gone
     document.getElementById('overlay2').style.display = 'none';
     document.getElementById('popup').style.display = 'none';
 
